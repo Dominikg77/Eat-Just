@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Chefs</title>
+    <link rel="icon" href="img/chef.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="render()" id="body">
+
+    <!--Headline-->
+    <div class="menu-container-top">
+        <div>
+
+            <img id="main-icon" src="img/restaurant.png">
+            <a href="https://www.just-eat.ch/lieferservice/essen/diepoldsau-9444">
+                <h1><em>Eat-Just</em></h1>
+            </a>
+        </div>
+        <div>
+            <a target="" href="#">
+                <h4> Kostenlose lieferung ab 50 CHF </h4>
+            </a>
+        </div>
+        <div>
+            <img onclick="einMiniBaskekt()" id="miniKorb" src="img/korb2.png">
+            <img id="swisslogo" src="img/schweiz.png">
+        </div>
+    </div>
+    <!--Headline FERTIG -->
+
+
+    <div class="body">
+
+
+        <!--Bild und Warenkorb-->
+        <div class="main-img">
+            <img src="img/mainburger.jpg">
+        </div>
+
+        <!--Bild und Warenkorb FERTIG -->
+
+        <!--Rundes Bild -->
+
+        <div class="rundeslogo">
+            <img src="img/fast-food.png">
+        </div>
+        <!--Rundes Bild Fertig -->
+
+
+        <!--Info container -->
+
+        <div class="info-container">
+            <!--Resturant Info-->
+
+            <div class="rest-info-container">
+                <div class="rest-info">
+                    <h2>Big Chefs</h2>
+                </div>
+
+                <div class="rest-info sternen">
+                    <img src="img/sterne1.png">
+                    <p>(312 Bewertungen)</p>
+                </div>
+                <div class="rest-info-img">
+                    <img src="img/uhr.png">
+                    <p id="time"> Heute ab 17:00-23:00</p>
+                    <img src="img/biker.png">
+                    <p id="price">5 CHF</p>
+                    <img src="img/tasche.png">
+                    <p id="min-price">Min. 30.00 CHF </p>
+                    <img src="img/platzhalter.png">
+                    <p id="min-price">Diepoldsau und umkreis 5km </p>
+                </div>
+                <div class="rest-info">
+                    <p>Fleisch aus Schweiz Herkunft</p>
+                </div>
+            </div>
+            <!--Resturant Info FERTIG -->
+
+            <!--Navigation Leiste -->
+            <div class="nav-container">
+                <nav id="nav">
+                    <img src="img/lupe.png">
+                    <a href="#stand0">Burger</a>
+                    <a href="#stand6">Veggie Burger</a>
+                    <a href="#stand7">Salate</a>
+                    <a href="#stand10">Getränke</a>
+                    <img onclick="einMiniBaskekt()" id="miniKorb2" src="img/korb2.png">
+                </nav>
+            </div>
+
+            <!--Navigation Leiste FERTIG -->
+
+            <!--Gerichte Info-->
+
+            <div class="gericht-info">
+
+                <div id="burger-gerichte" class="gericht-überschrift">
+                    <h4>Unsere Gerichte</h4>
+                </div>
+
+                <div class="cardM" id="input-menu1">
+
+                </div>
+
+            </div>
+
+            <div id="footer-id">
+
+            </div>
+
+            <!--Gerichte Info FERTIG -->
+
+            <div id="warenkorb-position" class="warenkorb d-nn">
+                <div class="warenkorb-container-titel">
+                    <img onclick="ausMiniBaskekt()" id="close" src="img/cancel.png">
+                    <h4>Warenkorb</h4>
+                    <hr> </div>
+                <!--JS Warenkorb infos-->
+                <div id="basket-container" class="basket-place ">
+
+                </div>
+
+                <div id="payment">
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--Info container FERTIG-->
+
+
+    </div>
+
+</body>
+
+
+</html>

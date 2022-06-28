@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Mail</title>
+
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="send_mail.php" method="POST">
+        <input name="name" placeholder="Dein Name">
+
+        <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
+
+        <button type="submit">Mail senden</button>
+    </form>
+
+</body>
+
+</html>

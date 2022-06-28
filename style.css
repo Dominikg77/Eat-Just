@@ -1,0 +1,1201 @@
+                html {
+                    scroll-behavior: smooth;
+                }
+                
+                body {
+                    margin: 0px;
+                    background-color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    overflow-x: hidden;
+                }
+                
+                h1 {
+                    margin-left: 15px;
+                    font-size: 36px;
+                }
+                
+                h4 {
+                    font-size: 24px;
+                }
+                
+                h5 {
+                    font-size: 16px;
+                }
+                
+                p {
+                    font-size: 16px;
+                    margin-block-start: 1rem;
+                    margin-block-end: 1rem;
+                }
+                /*Headline*/
+                
+                .menu-container-top {
+                    color: white;
+                    height: 80px;
+                    background-color: rgb(250, 97, 0);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                }
+                
+                .menu-container-top div {
+                    margin-left: 50px;
+                    margin-right: 80px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-self: center;
+                }
+                
+                .menu-container-top a {
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                .menu-container-top h4 {
+                    display: flex;
+                    align-self: center;
+                }
+                
+                .menu-container-top img {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    display: flex;
+                    align-self: center;
+                }
+                
+                #miniKorb {
+                    display: none;
+                }
+                /*Headline FERTIG  */
+                
+                .body {
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                }
+                /*Bild und warenkorb */
+                
+                .main-img img {
+                    height: 250px;
+                    width: 80%;
+                    object-fit: cover;
+                    border-radius: 0px 0px 10px 0px;
+                    -webkit-border-radius: 0px 0px 10px 0px;
+                    -moz-border-radius: 0px 0px 10px 0px;
+                    -ms-border-radius: 0px 0px 10px 0px;
+                    -o-border-radius: 0px 0px 10px 0px;
+                    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.64);
+                }
+                
+                .warenkorb {
+                    position: fixed;
+                    right: 0px;
+                    top: 100px;
+                    width: 20vw;
+                    height: 100vh;
+                    text-align: center;
+                    border-left: 2px solid rgba(0, 0, 0, 0.136);
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.136);
+                }
+                
+                hr {
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.136);
+                }
+                
+                .basket-place {
+                    margin-top: 40px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+                
+                .basket-place img {
+                    width: 100px;
+                    margin-bottom: -10px;
+                }
+                
+                .basket-place p {
+                    margin-top: -10px;
+                    color: grey;
+                }
+                
+                #warenkorb-position {
+                    transition: all 125ms ease-in-out;
+                }
+                
+                #close {
+                    display: none;
+                }
+                /*Bild und warenkorb FERTIG */
+                /*Rundes Logo*/
+                
+                .rundeslogo {
+                    z-index: 10;
+                    position: relative;
+                    margin-left: 36vw;
+                    margin-top: -3em;
+                    width: 100px;
+                    height: 100px;
+                    background-color: rgb(255, 255, 255, 0.65);
+                    border-radius: 100%;
+                    -webkit-border-radius: 100%;
+                    -moz-border-radius: 100%;
+                    -ms-border-radius: 100%;
+                    -o-border-radius: 100%;
+                    box-shadow: 0px 1px 23px 8px rgba(0, 0, 0, 0.72);
+                    margin-bottom: 1.5rem;
+                }
+                
+                .rundeslogo img {
+                    width: 70%;
+                    object-fit: cover;
+                    margin-left: 16px;
+                    margin-top: 12px;
+                }
+                /*Rundes Logo FERTIG */
+                /* Info Container */
+                
+                .info-container {
+                    width: 80vw;
+                    height: 700px;
+                    margin-top: -70px;
+                }
+                /* Info Container FERTIG */
+                /*Resturant Info */
+                
+                .rest-info-container {
+                    width: 60vw;
+                    height: 200px;
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding-top: 30px;
+                }
+                
+                .rest-info,
+                .rest-info-img {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: -15px;
+                }
+                
+                .rest-info-img {
+                    margin-left: -10px;
+                    margin-bottom: 10px;
+                    margin-top: -10px;
+                }
+                
+                .rest-info-img img {
+                    width: 24px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+                }
+                
+                .sternen img {
+                    width: 100px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+                
+                .sternen p {
+                    color: rgb(250, 97, 0);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+                
+                #time {
+                    color: grey;
+                }
+                
+                #min-price {
+                    color: grey;
+                }
+                
+                #price {
+                    color: green;
+                }
+                /*Resturant Info FERTIG */
+                /* Navigation Leiste */
+                
+                nav {
+                    position: relative;
+                    width: 60vw;
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                    margin-top: -1.4rem;
+                    margin-bottom: 30px;
+                    display: flex;
+                    justify-content: center;
+                    background-color: rgb(250, 97, 0, 0.3);
+                    padding: 10px 0px 10px 0px;
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }
+                
+                .nav1 {
+                    position: absolute;
+                    top: 15px;
+                    position: fixed!important;
+                }
+                
+                nav img {
+                    width: 30px;
+                    margin-right: 16px;
+                    margin-left: 16px;
+                }
+                
+                nav a {
+                    font-size: 1.4rem;
+                    color: black;
+                    text-decoration: none;
+                    margin-right: 12px;
+                    padding: 5px;
+                    transition: all 225ms ease-in-out;
+                    -webkit-transition: all 225ms ease-in-out;
+                    -moz-transition: all 225ms ease-in-out;
+                    -ms-transition: all 225ms ease-in-out;
+                    -o-transition: all 225ms ease-in-out;
+                }
+                
+                nav a:hover {
+                    color: white;
+                    background-color: rgb(250, 97, 0);
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }
+                
+                nav a:active {
+                    color: white;
+                    background-color: rgb(250, 97, 0);
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }
+                
+                #miniKorb2 {
+                    display: none;
+                }
+                
+                #stand0 {
+                    padding-top: 100px;
+                    margin-top: -50px;
+                    background-clip: content-box;
+                }
+                
+                #stand6 {
+                    padding-top: 100px;
+                    margin-top: -50px;
+                    background-clip: content-box;
+                }
+                
+                #stand7 {
+                    padding-top: 100px;
+                    margin-top: -50px;
+                    background-clip: content-box;
+                }
+                
+                #stand10 {
+                    padding-top: 100px;
+                    margin-top: -50px;
+                    background-clip: content-box;
+                }
+                /* Navigation Leiste FERTIG */
+                /* Gerichte Info */
+                
+                .gericht-info {
+                    width: 60vw;
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+                }
+                
+                .gericht-überschrift {
+                    background-color: rgb(0, 0, 0, 0.10);
+                    padding-bottom: 0.5px;
+                    padding-top: 0.5px;
+                    text-align: center;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
+                }
+                /*JS style*/
+                /* Gerichte Info Box */
+                
+                .card {
+                    border: 2px solid rgba(0, 0, 0, 0.136);
+                    margin: 24px;
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    border-radius: 16px;
+                    -webkit-border-radius: 16px;
+                    -moz-border-radius: 16px;
+                    -ms-border-radius: 16px;
+                    -o-border-radius: 16px;
+                    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+                    transition: all 225ms ease-in-out;
+                    -webkit-transition: all 225ms ease-in-out;
+                    -moz-transition: all 225ms ease-in-out;
+                    -ms-transition: all 225ms ease-in-out;
+                    -o-transition: all 225ms ease-in-out;
+                }
+                
+                .card:hover {
+                    border: 2px solid rgba(0, 0, 0, 0.5);
+                }
+                
+                .card h4 {
+                    margin-top: -10px;
+                    margin-bottom: 5px;
+                }
+                
+                .card p {
+                    color: grey;
+                }
+                
+                .card h5 {
+                    color: rgb(250, 97, 0);
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+                
+                .cardX {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: -24px;
+                    padding-top: 10px;
+                    margin-right: -15px;
+                }
+                
+                button {
+                    border: 1px solid rgba(0, 0, 0, 0.5);
+                    font-size: 24px;
+                    cursor: cell;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    transition: all 225ms ease-in-out;
+                    -webkit-transition: all 225ms ease-in-out;
+                    -moz-transition: all 225ms ease-in-out;
+                    -ms-transition: all 225ms ease-in-out;
+                    -o-transition: all 225ms ease-in-out;
+                }
+                
+                button:hover {
+                    border: 1px solid rgba(7, 37, 206, 0.9);
+                }
+                /* Gerichte Info FERTIG */
+                /* Footer  */
+                
+                .footer-container {
+                    width: 99.2vw;
+                    background-color: rgb(9, 56, 71);
+                    height: 150px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    position: relative;
+                    z-index: 99;
+                }
+                
+                .footer-container p {
+                    color: white;
+                    padding-top: 24px;
+                    padding-bottom: 12px;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+                
+                .footer-links {
+                    padding-top: 24px;
+                }
+                
+                .pfeil img {
+                    width: 48px;
+                }
+                
+                .footer-container a {
+                    color: white;
+                    margin-left: 24px;
+                    margin-right: 24px;
+                    text-decoration: none;
+                    border-bottom: 1px solid transparent;
+                    transition: all 225ms ease-in-out;
+                    -webkit-transition: all 225ms ease-in-out;
+                    -moz-transition: all 225ms ease-in-out;
+                    -ms-transition: all 225ms ease-in-out;
+                    -o-transition: all 225ms ease-in-out;
+                }
+                
+                .footer-container a:hover {
+                    border-bottom: 1px solid white;
+                    transition: all 225ms ease-in-out;
+                }
+                
+                .icons-a {
+                    margin-top: 12px;
+                }
+                /* Footer  FERTIG */
+                /*Warenkorb*/
+                
+                .basket-place {
+                    max-height: 45vh;
+                    overflow-y: auto;
+                }
+                
+                .basket-info {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 50px;
+                }
+                
+                .basket-info h5 {
+                    margin-left: 24px;
+                }
+                
+                .basket-info p {
+                    text-align: center;
+                    margin-top: 20px;
+                    margin-right: 24px;
+                }
+                
+                .basket-btn {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-right: 12px;
+                    margin-bottom: 24px;
+                }
+                
+                .basket-btn img {
+                    width: 12px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    padding: 5px;
+                    border: 2px solid rgba(0, 0, 0, 0.136);
+                    transition: all 225ms ease-in-out;
+                    -webkit-transition: all 225ms ease-in-out;
+                    -moz-transition: all 225ms ease-in-out;
+                    -ms-transition: all 225ms ease-in-out;
+                    -o-transition: all 225ms ease-in-out;
+                }
+                
+                #mm {
+                    cursor: s-resize;
+                }
+                
+                #nn {
+                    cursor: n-resize;
+                }
+                
+                .basket-btn img:hover {
+                    border: 2px solid rgba(0, 0, 0, 0.5);
+                }
+                
+                .d-none {
+                    display: none !important;
+                }
+                /*Warenkorb FERTIG*/
+                /*Summe */
+                
+                #summe {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 40px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                
+                .subtotal,
+                .deliver,
+                .total {
+                    font-size: 20px;
+                    margin-top: 12px;
+                }
+                
+                #bestellen {
+                    margin-top: 24px;
+                    background-color: rgb(250, 97, 0, 0.65);
+                    border-radius: 10px;
+                    border: 1px solid orange;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+                
+                #bestellen:active {
+                    background-color: rgb(250, 97, 0, 0.95);
+                    border: 2px solid orange;
+                }
+                /*Abschliessen*/
+                
+                .h4-bestell {
+                    margin-block-start: 0 !important;
+                }
+                
+                .form-input {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: -30px;
+                }
+                
+                form {
+                    margin-top: 5px;
+                }
+                
+                .inputBox input {
+                    width: 70%;
+                    padding: 7px;
+                    margin-top: 12px;
+                    border: 1px solid rgb(250, 97, 0, 0.35);
+                    background-color: rgb(250, 97, 0, 0.15);
+                    border-radius: 5px;
+                    outline: none;
+                    color: black;
+                    font-size: 1.2em;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+                
+                .inputBox span {
+                    position: absolute;
+                    left: 64px;
+                    margin-top: 10px;
+                    padding: 14px;
+                    pointer-events: none;
+                    font-size: 0.60em;
+                    color: rgba(0, 0, 0, 0.65);
+                    text-transform: uppercase;
+                    transition: 0.5s;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+                
+                .inputBox input:valid~span,
+                .inputBox input:focus~span {
+                    color: rgb(250, 97, 0, );
+                    transform: translateX(10px) translateY(-7px);
+                    -webkit-transform: translateX(10px) translateY(-7px);
+                    -moz-transform: translateX(10px) translateY(-7px);
+                    -ms-transform: translateX(10px) translateY(-7px);
+                    -o-transform: translateX(10px) translateY(-7px);
+                    font-size: 0.65em;
+                    padding: 0 10px;
+                    background-color: rgb(250, 97, 0, 0.15);
+                    z-index: 99;
+                    border-left: 1px solid rgb(250, 97, 0, 0.85);
+                    border-right: 1px solid rgb(250, 97, 0, 0.85);
+                    letter-spacing: 0.2em;
+                }
+                
+                .inputBox input:valid,
+                .inputBox input:focus {
+                    border: 1.5px solid rgb(250, 97, 0, 0.85);
+                    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, 0.72);
+                }
+                
+                .form-input button {
+                    margin-top: 20px;
+                    background-color: rgb(250, 97, 0, 0.65);
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    width: 150px;
+                    border: 1px solid orange;
+                    padding: 5px;
+                    cursor: pointer;
+                }
+                
+                .form-input button:hover {
+                    background-color: rgb(250, 97, 0, 0.95);
+                    border: 2px solid orange;
+                }
+                
+                .backDaten {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .backDaten img {
+                    height: 30px;
+                    width: 30px;
+                    object-fit: cover;
+                    margin-right: 24px;
+                    cursor: pointer;
+                }
+                /*Media Klassen*/
+                
+                @media screen and (max-width:1500px) {
+                    /*Schriftgrössen inkl. Button*/
+                    h1 {
+                        font-size: 30px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+                    h5 {
+                        font-size: 14px;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+                    }
+                    .subtotal,
+                    .deliver,
+                    .total {
+                        font-size: 16px;
+                    }
+                    button {
+                        font-size: 16px;
+                    }
+                    nav a {
+                        font-size: 20px;
+                    }
+                    .inputBox input {
+                        font-size: 16px;
+                    }
+                }
+                
+                @media screen and (max-width:1300px) {
+                    /*Schriftgrössen inkl. Button*/
+                    h1 {
+                        font-size: 26px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                    }
+                    h5 {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+                    }
+                    .subtotal,
+                    .deliver,
+                    .total {
+                        font-size: 14px;
+                    }
+                    button {
+                        font-size: 14px;
+                    }
+                    nav a {
+                        font-size: 18px;
+                    }
+                    .inputBox input {
+                        font-size: 14px;
+                    }
+                    .menu-container-top {
+                        text-align: center;
+                    }
+                    /*Bild und warenkorb bereite*/
+                    .main-img img {
+                        width: 70%;
+                        height: 200px;
+                    }
+                    .warenkorb {
+                        width: 30vw;
+                    }
+                    /*Margin hauptbereich*/
+                    .rest-info-container {
+                        margin-left: 4vw;
+                        width: 100%;
+                    }
+                    nav {
+                        margin-left: 4vw;
+                    }
+                    .gericht-info {
+                        margin-left: 4vw;
+                    }
+                    /* Rundes Logo*/
+                    .rundeslogo {
+                        width: 90px;
+                        height: 90px;
+                        margin-top: -3rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .rundeslogo img {
+                        margin-left: 10px;
+                        margin-top: 10px;
+                    }
+                    /*Bild und warenkorb bereite*/
+                    .main-img img {
+                        width: 70%;
+                    }
+                    .warenkorb {
+                        width: 30vw;
+                    }
+                    /*Margin hauptbereich*/
+                    .rest-info-container {
+                        margin-left: 4vw;
+                        width: 80%;
+                        text-align: center;
+                    }
+                    nav {
+                        margin-left: 4vw;
+                    }
+                    .gericht-info {
+                        margin-left: 4vw;
+                    }
+                }
+                
+                @media screen and (max-width:1000px) {
+                    /*Schriftgrössen inkl. Button*/
+                    h1 {
+                        font-size: 26px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                    }
+                    h5 {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+                    }
+                    .subtotal,
+                    .deliver,
+                    .total {
+                        font-size: 14px;
+                    }
+                    button {
+                        font-size: 14px;
+                    }
+                    nav a {
+                        font-size: 18px;
+                    }
+                    .inputBox input {
+                        font-size: 14px;
+                    }
+                    .menu-container-top {
+                        text-align: center;
+                    }
+                    /*Bild und warenkorb bereite*/
+                    .main-img img {
+                        width: 70%;
+                    }
+                    .warenkorb {
+                        width: 30vw;
+                    }
+                    /*Margin hauptbereich*/
+                    .rest-info-container {
+                        margin-left: 4vw;
+                        width: 80%;
+                        text-align: center;
+                    }
+                    nav {
+                        margin-left: 4vw;
+                    }
+                    .gericht-info {
+                        margin-left: 4vw;
+                    }
+                    /* Footer*/
+                    .footer-container a {
+                        font-size: 14px;
+                    }
+                    /* Rundes Logo*/
+                    .rundeslogo {
+                        width: 60px;
+                        height: 60px;
+                        margin-top: -2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .rundeslogo img {
+                        margin-left: 10px;
+                        margin-top: 8px;
+                    }
+                    .footer-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding-bottom: 30px;
+                    }
+                    .footer-links a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        margin-top: 8px;
+                    }
+                    .icons-a a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                    }
+                    .pfeil {
+                        margin-top: 10px;
+                    }
+                    .footer-container p {
+                        padding-top: 8px;
+                        padding-bottom: 0px;
+                        text-align: center;
+                        z-index: 0;
+                    }
+                }
+                /*Ab hier ein einklappbaren warenkorb*/
+                
+                @media screen and (max-width:800px) {
+                    /*Schriftgrössen inkl. Button*/
+                    .bodyFixed {
+                        position: fixed !important;
+                    }
+                    h1 {
+                        font-size: 20px;
+                    }
+                    h4 {
+                        font-size: 18px;
+                    }
+                    h5 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+                    }
+                    .subtotal,
+                    .deliver,
+                    .total {
+                        font-size: 16px;
+                    }
+                    button {
+                        font-size: 16px;
+                    }
+                    nav a {
+                        font-size: 16px;
+                    }
+                    .inputBox input {
+                        font-size: 10px;
+                    }
+                    .menu-container-top {
+                        text-align: center;
+                    }
+                    /*Bild und warenkorb bereite*/
+                    .main-img img {
+                        width: 100%;
+                    }
+                    .warenkorb {
+                        z-index: 5;
+                        width: 100%;
+                        margin-top: -40px;
+                        background-color: white;
+                    }
+                    /*Margin hauptbereich*/
+                    .rest-info-container {
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        text-align: center;
+                        margin-left: 10vw;
+                    }
+                    nav {
+                        margin-left: 10vw;
+                        width: 80vw;
+                    }
+                    .gericht-info {
+                        margin-left: 10vw;
+                        width: 80vw;
+                    }
+                    /* Footer*/
+                    .footer-container a {
+                        font-size: 14px;
+                    }
+                    /* Rundes Logo*/
+                    .rundeslogo {
+                        z-index: 0;
+                        width: 60px;
+                        height: 60px;
+                        margin-top: -2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    .rundeslogo img {
+                        margin-left: 10px;
+                        margin-top: 8px;
+                    }
+                    /*Mini Warenkorb */
+                    #miniKorb {
+                        display: flex;
+                        cursor: pointer;
+                    }
+                    #miniKorb2 {
+                        display: flex;
+                        cursor: pointer;
+                        align-items: center;
+                        width: 40px;
+                        height: 30px;
+                        object-fit: cover;
+                    }
+                    #close {
+                        display: flex;
+                        cursor: pointer;
+                    }
+                    .d-nn {
+                        display: none;
+                    }
+                    /*Input*/
+                    .inputBox span {
+                        left: 120px;
+                        padding: 14px;
+                        pointer-events: none;
+                        font-size: 0.60em;
+                    }
+                    /*Header*/
+                    .menu-container-top {
+                        height: 60px;
+                    }
+                    .menu-container-top div {
+                        margin-left: 50px;
+                        margin-right: 50px;
+                    }
+                    #close {
+                        width: 36px;
+                        margin-top: 12px;
+                        margin-left: 12px;
+                    }
+                    .footer-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding-bottom: 30px;
+                    }
+                    .footer-links a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        margin-top: 8px;
+                    }
+                    .icons-a a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                    }
+                    .pfeil {
+                        margin-top: 10px;
+                    }
+                    .footer-container p {
+                        padding-top: 8px;
+                        padding-bottom: 0px;
+                        text-align: center;
+                        z-index: 0;
+                    }
+                }
+                
+                @media screen and (max-width:600px) {
+                    body {
+                        margin: 0px;
+                    }
+                    .bodyFixed {
+                        position: fixed !important;
+                    }
+                    h1 {
+                        font-size: 14px;
+                    }
+                    h4 {
+                        font-size: 12px;
+                    }
+                    h5 {
+                        font-size: 12px;
+                    }
+                    p {
+                        font-size: 10px;
+                        margin-block-start: 1rem;
+                        margin-block-end: 1rem;
+                    }
+                    .subtotal,
+                    .deliver,
+                    .total {
+                        font-size: 12px;
+                    }
+                    button {
+                        font-size: 12px;
+                    }
+                    nav a {
+                        font-size: 12px;
+                    }
+                    .inputBox input {
+                        font-size: 8px;
+                    }
+                    .menu-container-top {
+                        text-align: center;
+                    }
+                    /*Header*/
+                    .menu-container-top {
+                        height: 60px;
+                    }
+                    .menu-container-top div {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                    }
+                    .menu-container-top img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    #swisslogo {
+                        display: none;
+                    }
+                    .rundeslogo {
+                        display: none;
+                    }
+                    .main-img img {
+                        border-radius: 0px;
+                        -webkit-border-radius: 0px;
+                        -moz-border-radius: 0px;
+                        -ms-border-radius: 0px;
+                        -o-border-radius: 0px;
+                        margin-bottom: 36px;
+                    }
+                    .sternen img {
+                        width: 70px;
+                    }
+                    .rest-info-img img {
+                        width: 16px;
+                        margin-right: 5px;
+                        margin-left: 5px;
+                    }
+                    nav {
+                        margin-bottom: 12px;
+                        align-items: center;
+                    }
+                    nav img {
+                        display: none;
+                    }
+                    #miniKorb2 {
+                        width: 30px;
+                        margin-left: -5px;
+                    }
+                    .basket-place {
+                        max-height: 60vh;
+                    }
+                    #summe {
+                        margin-top: 10px;
+                    }
+                    .warenkorb {
+                        margin-top: -50px;
+                        position: fixed;
+                        height: 100vh;
+                    }
+                    #close {
+                        width: 24px;
+                        margin-top: 12px;
+                        margin-left: 12px;
+                    }
+                    .rest-info {
+                        margin-top: -25px;
+                    }
+                    .footer-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding-bottom: 30px;
+                    }
+                    .footer-links a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                        margin-top: 8px;
+                    }
+                    .icons-a a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 10px;
+                    }
+                    .pfeil {
+                        margin-top: 10px;
+                    }
+                    .footer-container p {
+                        padding-top: 8px;
+                        padding-bottom: 0px;
+                        text-align: center;
+                        z-index: 0;
+                    }
+                    .form-input {
+                        margin-top: -10px;
+                    }
+                    .inputBox span {
+                        left: 75px;
+                        margin-top: 10px;
+                    }
+                    .basket-send {
+                        max-height: 65vh;
+                    }
+                    .backDaten {
+                        margin-top: -18px;
+                    }
+                    .warenkorb-container-titel {
+                        height: 50px;
+                    }
+                }
+                
+                @media screen and (max-width:400px) {
+                    .basket-place {
+                        max-height: 35vh;
+                    }
+                    #summe {
+                        margin-top: -5px;
+                    }
+                    .backDaten {
+                        margin-top: -18px;
+                    }
+                    .warenkorb-container-titel {
+                        height: 50px;
+                    }
+                    form {
+                        margin-top: 0px;
+                    }
+                    .inputBox input {
+                        padding: 5px;
+                        margin-top: 8px;
+                    }
+                    .inputBox span {
+                        margin-top: 10px;
+                        padding: 2px;
+                        font-size: 0.6rem;
+                    }
+                    .inputBox input:valid~span,
+                    .inputBox input:focus~span {
+                        font-size: 0.4em;
+                        padding: 0 10px;
+                    }
+                    #bestellen-auf {
+                        margin-top: 10px;
+                        padding: 2px;
+                    }
+                }

@@ -1,0 +1,37 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 44px;
+}
+
+p {
+    font-size: 24px;
+}
+
+img {
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+    img {
+        margin-top: 30px;
+    }
+}

@@ -41,8 +41,8 @@ function footer() {
     footer.innerHTML = `
     <div class="footer-container">
         <div class="footer-links">
-            <a href="impessum.html">Impressum</a>
-            <a href="#">Datenschutzerklärung</a>
+            <a href="impessum.html"target="_blank"> Impressum</a>
+            <a href="datenschutz.html" target="_blank" >Datenschutzerklärung</a>
         </div>
         <div class="icons-a" >
         <a href="https://www.flaticon.com/">Icon from Flaticon</a>
